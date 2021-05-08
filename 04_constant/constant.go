@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-const str string = "04 constant"
+const str string = "04_constant"
 
 func main() {
 	fmt.Println(str)
