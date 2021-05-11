@@ -1,18 +1,12 @@
 package main
 
-import "fmt"
-
-func fibonacci() func() int {
-	x, y := 0, 1
-
-	return func() int {
-		x, y = y, x+y
-		return x
-	}
-}
+import (
+	"fmt"
+	"github.com/WisdomFusion/go_examples/19_fibonacci/fib"
+)
 
 func main() {
-	f := fibonacci()
+	f := fib.Fibonacci()
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())
 	}

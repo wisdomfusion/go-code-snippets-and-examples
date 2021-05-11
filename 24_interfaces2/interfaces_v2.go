@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/WisdomFusion/go_examples/24_interfaces_v2/retriever"
+	"github.com/WisdomFusion/go_examples/24_interfaces2/retriever"
 )
 
 type Retriever interface {
