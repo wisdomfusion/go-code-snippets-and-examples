@@ -6,12 +6,8 @@ import (
 )
 
 func worker(id int, c chan int) {
-	for {
-		n, ok := <-c
-		if !ok {
-			break
-		}
-		fmt.Printf("worker %d received %c\n", id, n)
+	for n := range c {
+		fmt.Printf("worker %d received %d\n", id, n)
 	}
 }
 
