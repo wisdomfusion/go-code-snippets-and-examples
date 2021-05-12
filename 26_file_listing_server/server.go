@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/WisdomFusion/go_examples/26_filelistingserver/filelisting"
-	"github.com/sirupsen/logrus"
+	"github.com/WisdomFusion/go_examples/26_file_listing_server/filelisting"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 )
@@ -13,7 +13,7 @@ func errWrapper(handler appHandler) func(w http.ResponseWriter, r *http.Request)
 	return func(w http.ResponseWriter, r *http.Request) {
 		err := handler(w, r)
 		if err != nil {
-			logrus.Warnf("error handling request: %s", err.Error())
+			log.Warnf("error handling request: %s", err.Error())
 			code := http.StatusOK
 
 			switch {
@@ -33,5 +33,5 @@ func errWrapper(handler appHandler) func(w http.ResponseWriter, r *http.Request)
 func main() {
 	http.HandleFunc("/ls/", errWrapper(filelisting.HandleFileList))
 
-	logrus.Fatalln(http.ListenAndServe(":8888", nil))
+	log.Fatalln(http.ListenAndServe(":8888", nil))
 }

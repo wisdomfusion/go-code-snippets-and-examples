@@ -1,2 +1,3 @@
-# go_examples
-Go examples
+# go-code-snippets-and-examples
+
+Go code snippets and examples.
