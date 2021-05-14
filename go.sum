@@ -6,8 +6,8 @@ github.com/sirupsen/logrus v1.8.1 h1:dJKuHgqk1NNQlqoA6BTlM1Wf9DOH3NBjQyu0h9+AZZE
 github.com/sirupsen/logrus v1.8.1/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
-github.com/wisdomfusion/go-encode v0.0.3 h1:dFZEDmf6lIB0gEM65d8M40Dsrl1tYWwWFWB5hpQG+pw=
-github.com/wisdomfusion/go-encode v0.0.3/go.mod h1:yIrNgqGR6akBjMMhNgKF7awFHUFDNDK9lt631MuoPbg=
+github.com/wisdomfusion/go-encode v0.1.0 h1:h4l5ufM6M0ichW+sBzvEQzQbQzsO3tkm4/HtAEUyu/I=
+github.com/wisdomfusion/go-encode v0.1.0/go.mod h1:yIrNgqGR6akBjMMhNgKF7awFHUFDNDK9lt631MuoPbg=
 golang.org/x/net v0.0.0-20210510120150-4163338589ed h1:p9UgmWI9wKpfYmgaV/IZKGdXc5qEK45tDwwwDyjS26I=
 golang.org/x/net v0.0.0-20210510120150-4163338589ed/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
 golang.org/x/sys v0.0.0-20191026070338-33540a1f6037/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=

@@ -21,7 +21,7 @@ func main() {
 		return
 	}
 
-	e, _, _, err := encode.Find(resp.Body)
+	e, _, _, err := encode.FindEncoding(resp.Body)
 	if err != nil {
 		panic(err)
 	}
