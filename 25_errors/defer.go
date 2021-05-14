@@ -3,8 +3,9 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/WisdomFusion/go_examples/19_fibonacci/fib"
 	"os"
+
+	"github.com/wisdomfusion/go_examples/19_fibonacci/fib"
 )
 
 func writeFile(filename string) {
@@ -24,5 +25,5 @@ func writeFile(filename string) {
 }
 
 func main() {
-	writeFile("fib.data")
+	writeFile("dat/fib.dat")
 }

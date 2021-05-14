@@ -1,10 +1,12 @@
 package main
 
 import (
-	"github.com/WisdomFusion/go_examples/26_file_listing_server/filelisting"
-	log "github.com/sirupsen/logrus"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
+
+	log "github.com/sirupsen/logrus"
+	"github.com/wisdomfusion/go_examples/26_file_listing_server/filelisting"
 )
 
 type appHandler func(w http.ResponseWriter, r *http.Request) error
@@ -32,6 +34,5 @@ func errWrapper(handler appHandler) func(w http.ResponseWriter, r *http.Request)
 
 func main() {
 	http.HandleFunc("/ls/", errWrapper(filelisting.HandleFileList))
-
 	log.Fatalln(http.ListenAndServe(":8888", nil))
 }

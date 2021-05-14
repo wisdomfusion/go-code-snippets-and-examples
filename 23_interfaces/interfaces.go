@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/WisdomFusion/go_examples/23_interfaces/geometry"
+	"github.com/wisdomfusion/go_examples/23_interfaces/geometry"
 )
 
 type Geometry interface {

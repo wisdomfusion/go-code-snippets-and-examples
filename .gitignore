@@ -1,8 +1,10 @@
 .vscode/
 
 .idea/
+
 template/
-00 playground/
+00_playground/
 
 *.exe
-*.data
+
+dat/
