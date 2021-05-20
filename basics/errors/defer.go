@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wisdomfusion/go_examples/19_fibonacci/fib"
+	"github.com/wisdomfusion/go_examples/practices/fibonacci/fib"
 )
 
 func writeFile(filename string) {
@@ -25,5 +25,7 @@ func writeFile(filename string) {
 }
 
 func main() {
-	writeFile("dat/fib.dat")
+	pwd, _ := os.Getwd()
+	fp := pwd + string(os.PathSeparator) + "fib.dat"
+	writeFile(fp)
 }

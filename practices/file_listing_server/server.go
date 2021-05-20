@@ -6,7 +6,7 @@ import (
 	"os"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/wisdomfusion/go_examples/26_file_listing_server/filelisting"
+	"github.com/wisdomfusion/go_examples/practices/file_listing_server/filelisting"
 )
 
 type appHandler func(w http.ResponseWriter, r *http.Request) error

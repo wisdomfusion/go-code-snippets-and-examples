@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/wisdomfusion/go_examples/19_fibonacci/fib"
+
+	"github.com/wisdomfusion/go_examples/practices/fibonacci/fib"
 )
 
 func main() {
